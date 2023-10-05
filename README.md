@@ -10,7 +10,7 @@ Video with vizualization: [mmc.mp4](./data/mmc.mp4)
 Award: 2nd runners up, Techfest 2021
 
 ### steps for running simulation
-
+Make sure you are using X11 as the display server and not wayland. Also disable Xserver access control with `xhost +`.
 1. Start the container:  `docker compose up --build` 
 2. Open a terminal in the container: `docker exec -it mmc_container bash`
 3. Launch the simulation in a world of your choice using `roslaunch pkg_tf_micromouse final.launch world_name:=<name>`. 
